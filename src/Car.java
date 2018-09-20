@@ -1,0 +1,30 @@
+import java.awt.*;
+
+public class Car {
+
+    // Data Types:
+    // int -> integer 1, 2, 3,
+    // double -> decimal 34.5, 32.1,
+    // string -> "hello world"
+    // Color from awt library
+    // boolean -> true or false
+
+    double averageMilesPerGallon;
+    String licensePlate;
+    Color paintColor;
+    boolean areTailingWorking;
+
+    public Car(double inputAverageMPG,
+               String inputLicensePlate,
+               Color inputPaintColor,
+               boolean inputAreTailightsWorking) {
+        this.averageMilesPerGallon = inputAverageMPG;
+        this.licensePlate = inputLicensePlate;
+        this.paintColor = inputPaintColor;
+        this.areTailingWorking = inputAreTailightsWorking;
+    }
+
+    public void changePaintColor(Color newPaintColor) {      // gør så man kan skrifte farve i Main
+        this.paintColor = newPaintColor;
+    }
+}
